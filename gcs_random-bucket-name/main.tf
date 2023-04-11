@@ -19,13 +19,13 @@ provider "google" {
 }
 
 resource "random_string" "this" {
-  length  = 16
+  length  = 10
   upper   = false
   special = false
   numeric = false
 }
 
 resource "google_storage_bucket" "this" {
-  name     = random_string.this.result
+  name     = "bucketname-${random_string.this.result}"
   location = "europe-west4"
 }
