@@ -28,4 +28,5 @@ resource "random_string" "this" {
 resource "google_storage_bucket" "this" {
   name     = "bucketname-${random_string.this.result}"
   location = "europe-west4"
+#  force_destroy = true
 }
