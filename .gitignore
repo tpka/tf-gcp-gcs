@@ -45,6 +45,9 @@ operations/variable-scripts/variable.json
 # Sentinel runtime directory
 .sentinel
 
+# Terraform lockfile
+.terraform.lock.hcl
+
 # TOMO's test files
 archive/*
 *202*
